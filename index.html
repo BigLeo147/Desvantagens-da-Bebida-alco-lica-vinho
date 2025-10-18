@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Meu Site Interativo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desvantagens do Álcool</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Bem-vindo ao meu site!</h1>
-    <p>Clique no botão para mudar a cor do fundo:</p>
-    <button onclick="mudarCor()">Mudar Cor</button>
-  </div>
+  <header>
+    <h1>Desvantagens de Consumir Bebidas Alcoólicas</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="efeitos.html">Efeitos</a>
+      <a href="prevencao.html">Prevenção</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <img src="img/alcool.jpg" alt="Imagem ilustrativa sobre álcool" />
+      <p>Embora o álcool seja comum em festas e celebrações, seu consumo excessivo pode trazer sérias consequências físicas, mentais e sociais.</p>
+    </section>
+
+    <section class="cta">
+      <h2>Você sabe os riscos?</h2>
+      <button onclick="mostrarMais()">Clique para descobrir</button>
+      <div id="mais-info" style="display: none;">
+        <p>O álcool afeta o cérebro, o fígado e pode causar dependência. Além disso, aumenta o risco de acidentes e problemas familiares.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Projeto Educativo</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
