@@ -1,13 +1,10 @@
-function mudarCor() {
-  const cores = ["#f2f2f2", "#ffb3b3", "#cce5ff", "#d4edda", "#fff3cd", "#f8d7da"];
-  const corAtual = document.body.style.backgroundColor;
-  let novaCor;
-
-  do {
-    novaCor = cores[Math.floor(Math.random() * cores.length)];
-  } while (novaCor === corAtual);
-
-  document.body.style.backgroundColor = novaCor;
+function mostrarMais() {
+  const div = document.getElementById("mais-info");
+  if (div.style.display === "none") {
+    div.style.display = "block";
+  } else {
+    div.style.display = "none";
+  }
 }
 
 
